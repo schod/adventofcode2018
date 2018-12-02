@@ -1,7 +1,6 @@
 #!/bin/bash
 
 in_file=input
-
 SUM2=0
 SUM3=0
 
@@ -13,8 +12,6 @@ while IFS='' read -r line; do
     
     [ $x2 -gt 0 ] && SUM2=$[ $SUM2 + 1 ]
     [ $x3 -gt 0 ] && SUM3=$[ $SUM3 + 1 ]
-
-
 done < "$in_file"
 
 echo $[ $SUM2 * $SUM3 ]
