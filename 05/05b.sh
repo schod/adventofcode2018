@@ -1,7 +1,6 @@
 #!/bin/bash
 
 in_file=input
-
 polymer=$(cat $in_file)
 min_size=${#polymer}
 
